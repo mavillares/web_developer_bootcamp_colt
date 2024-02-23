@@ -31,3 +31,19 @@ div:nth-of-type(1){
 div:nth-of-type(5){
     flex-grow: 1;
 }
+main{
+    width: 80%;
+    margin: 0 auto;
+    border: 5px solid black;
+    height: 500px;
+    display: flex;
+}
+main .sidebar{
+    background-color: purple;
+    flex: 1  2 300px;
+}
+main .maincontent{
+    background-color: cyan;
+    flex:2 1 800px;
+
+}
