@@ -58,7 +58,7 @@ const fakeRequestPromise = (url) => {
   }
 );*/
 
-fakeRequestPromise("google.com/page1")
+/*fakeRequestPromise("google.com/page1")
   .then(() => {
     console.log("PROMISE RESOLVED!!");
     console.log("IT WORKED!!");
@@ -84,4 +84,24 @@ fakeRequestPromise("google.com/page1")
   .catch(() => {
     console.log("PROMISE REJECTED!!");
     console.log("OH NO ERROR!!");
+  });*/
+
+fakeRequestPromise("google.com/page1")
+  .then((data) => {
+    console.log("IT WORKED (page1)!!");
+    console.log(data);
+    return fakeRequestPromise("google.com/page2");
+  })
+  .then((data) => {
+    console.log("IT WORKED (page2)!!");
+    console.log(data);
+    return fakeRequestPromise("google.com/page3");
+  })
+  .then((data) => {
+    console.log("IT WORKED (page3)!!");
+    console.log(data);
+  })
+  .catch((err) => {
+    console.log("OH NO, A REQUEST FAILED");
+    console.log(err);
   });
