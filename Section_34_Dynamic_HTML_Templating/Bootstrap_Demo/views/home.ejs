@@ -1,25 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-  </head>
-  <body>
-    <h1>Home Page <%= 5+4+2 %></h1>
-    <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem quaerat
-      vero eius totam, odio excepturi explicabo perspiciatis iusto dolor numquam
-      veniam quia, alias consectetur molestias molestiae ea voluptatem deserunt
-      sapiente?Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-      Perferendis quis enim nam quod autem temporibus quam quia similique. Dicta
-      maxime magni quod architecto adipisci voluptas placeat eius, inventore
-      repudiandae
-    </p>
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit quae
-      tenetur quod incidunt maiores ipsa, pariatur aperiam in adipisci maxime
-      eveniet deleniti exercitationem nisi eos. Cum quod quasi sit accusamus?
-    </p>
-  </body>
-</html>
+<%- include("partials/head") %> <%- include("partials/navbar") %>
+<h1>Home Page <%= 5+4+2 %></h1>
+<p>
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem quaerat vero
+  eius totam, odio excepturi explicabo perspiciatis iusto dolor numquam veniam
+  quia, alias consectetur molestias molestiae ea voluptatem deserunt
+  sapiente?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+  quis enim nam quod autem temporibus quam quia similique. Dicta maxime magni
+  quod architecto adipisci voluptas placeat eius, inventore repudiandae
+</p>
+<p>
+  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit quae tenetur
+  quod incidunt maiores ipsa, pariatur aperiam in adipisci maxime eveniet
+  deleniti exercitationem nisi eos. Cum quod quasi sit accusamus?
+</p>
+<%- include("partials/footer") %>
